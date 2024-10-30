@@ -43,8 +43,8 @@ public class Baseclass {
 	public void configbc() throws Throwable
 	{
 		System.out.println(" launch browser");
-	  String browser=flib.getDatafrompropertyfile("browser");
-		//String browser=System.getProperty("browser");
+	 // String browser=flib.getDatafrompropertyfile("browser");
+		String browser=System.getProperty("browser");
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			driver=new ChromeDriver();
