@@ -53,4 +53,22 @@
 </dependency>
 
 </dependencies>
+<profiles>
+<profile>
+<id>smokeid </id>
+<build><plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng_st.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin> 
+</plugins>
+</build>
+</profile>
+</profiles>
 </project>
